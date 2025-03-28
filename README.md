@@ -26,7 +26,7 @@ CACHE_STORE=file
 
 Run the following command to run migrations and seeds:
 ```sh
-php artisan migrate --seed
+php artisan migrate
 ```
 
 To serve the application you need to run the following command in the project directory. (This will give you an address with port number 8000)
