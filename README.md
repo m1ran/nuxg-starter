@@ -17,13 +17,16 @@ Run the following command to generate the key (You can also edit your database c
 ```sh
 php artisan key:generate
 ```
-Make some changes in your .env file
-Add APP_GAME_SERVICE=lucky
-Set QUEUE_CONNECTION=sync and CACHE_STORE=file
+Edit your `.env` file
+```env
+APP_GAME_SERVICE=lucky
+QUEUE_CONNECTION=sync
+CACHE_STORE=file
+```
 
 Run the following command to run migrations and seeds:
 ```sh
-php artisan migrate --seed
+php artisan migrate
 ```
 
 To serve the application you need to run the following command in the project directory. (This will give you an address with port number 8000)
